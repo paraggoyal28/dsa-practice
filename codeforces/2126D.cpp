@@ -17,19 +17,13 @@ ll solve() {
     
     }
 
-    sort(casinos.begin(), casinos.end(), [](vector<ll>& casino1, vector<ll>& casino2) {
-        return casino1[0] == casino2[0] ? casino1[1] < casino2[1] : casino1[0] < casino2[0];
-    });
-
+    sort(casinos.begin(), casinos.end());
     for (ll i = 0; i < noOfCasinos; i++) {
-        // if I don't gain any coin with this casino I skip it
-        if (casinos[i][2] <= initialCoins) {
-            continue;
-        }
+        
         // if I can get the coin with this casino
         if (initialCoins >= casinos[i][0] 
             && initialCoins <= casinos[i][1]) {
-            initialCoins = casinos[i][2];
+            initialCoins = max(initialCoins, casinos[i][2]);
         }
     }
 

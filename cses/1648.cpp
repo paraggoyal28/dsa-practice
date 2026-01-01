@@ -1,120 +1,144 @@
-// Problem -  https://cses.fi/problemset/task/1648/
+/*
+problem: Dynamic Range Sum Queries
+author: parag kumar goyal
+url: https://cses.fi/problemset/task/1648
+approach: Segment Tree
+time: O(logn) for query O(logn) for update O(n) for preprocessing
+space: O(4*n)
+*/
 #include <bits/stdc++.h>
-#include <stdlib.h>
-#include <time.h>
-
+#define ll long long int
+#define INF 2e18
 using namespace std;
-double EPS = 1e-12;
-typedef long long int lld;
-typedef pair<lld, lld> PA;
-long double tick()
-{
-    static clock_t oldt;
-    clock_t newt = clock();
-    long double diff = 1.0L * (newt - oldt) / CLOCKS_PER_SEC;
-    oldt = newt;
-    return diff;
-}
-#define rep(i, a, n) for (long long int i = (a); i <= (n); ++i)
-#define repI(i, a, n) for (int i = (a); i <= (n); ++i)
-#define repD(i, a, n) for (long long int i = (a); i >= (n); --i)
-#define repDI(i, a, n) for (int i = (a); i >= (n); --i)
-inline lld sc()
-{
-    lld a;
-    scanf("%lld", &a);
-    return a;
-}
-inline int scd()
-{
-    int a;
-    scanf("%d", &a);
-    return a;
-}
-#define prL(a) printf("%lld\n", a)
-#define prS(a) printf("%lld ", a)
-#define prdL(a) printf("%d\n", a)
-#define prdS(a) printf("%d ", a)
-#define all(c) (c).begin(), (c).end()
-#define sz(a) ((int)a.size())
-#ifdef LOCAL_RUN
-#define Error(x...)              \
-    {                            \
-        cout << "(" << #x << ")" \
-             << " = ( ";         \
-        printIt(x);              \
-    }
-#else
-#define Error(x...) 42
-#endif
-template <typename T1>
-void printIt(T1 t1) { cout << t1 << " )" << endl; }
-template <typename T1, typename... T2>
-void printIt(T1 t1, T2... t2)
-{
-    cout << t1 << " , ";
-    printIt(t2...);
-}
-#define popcount __builtin_popcountll
 
-#define lim 300010
-#define lim2 200010
-// std::ios::sync_with_stdio(false); // Ab :)
 
-lld A[lim];
-lld Val[lim];
-
-int main()
-{
-    int n = scd(), q = scd();
-    repI(i, 0, n - 1) A[i] = Val[i] = sc();
-    const int BLOCK_SIZE = 300;
-    repI(i, 0, n - 1)
-    {
-        if (i % BLOCK_SIZE != 0)
-        {
-            A[i] += A[i - 1];
-        }
+void preprocessSegmentTree(vector<ll>& tree, vector<ll>& a, ll s, ll e, ll node) {
+    if (s == e) {
+        tree[node] = a[s];
+        return;
     }
 
-    auto findSum = [&](int l, int r)
-    {
-        lld sum = -(l % BLOCK_SIZE == 0 ? 0 : A[l - 1]);
-        while (l / BLOCK_SIZE < r / BLOCK_SIZE)
-        {
-            int en = min(n - 1, l / BLOCK_SIZE * BLOCK_SIZE + BLOCK_SIZE - 1);
-            sum += A[en];
-            l = en + 1;
-        }
-        sum += A[r];
-        return sum;
-    };
+    ll mid = (s + e)/2;
+    preprocessSegmentTree(tree, a, s, mid, node*2);
+    preprocessSegmentTree(tree, a, mid+1, e, node*2+1);
+    tree[node] = tree[node*2] + tree[node*2+1];
+}
 
-    auto change = [&](int ind, lld x)
-    {
-        x -= Val[ind];
-        Val[ind] += x;
-        int en = min(n - 1, ind / BLOCK_SIZE * BLOCK_SIZE + BLOCK_SIZE - 1);
-        repI(i, ind, en)
-        {
-            A[i] += x;
-        }
-    };
+ll query(vector<ll>& tree, ll l, ll r, ll node, ll s, ll e) {
+    // no overlap
+    if (s > r || e < l) {
+        return 0;
+    }
 
-    while (q--)
-    {
-        int type = scd();
-        if (type == 1)
-        {
-            int ind = scd() - 1;
-            lld val = sc();
-            change(ind, val);
+    if (l <= s && e <= r) {
+        return tree[node];
+    }
+
+    ll mid = (s + e)/2;
+    ll left = query(tree, l, r, node*2, s, mid);
+    ll right = query(tree, l, r, node*2+1, mid+1, e);
+    return left + right;
+}
+
+void update(vector<ll>& tree, ll idx, ll value, ll node, ll s, ll e) {
+    if (s == e && s == idx) {
+        tree[node] = value;
+        return;
+    }
+
+    ll mid = (s + e)/2;
+    if (idx <= mid) {
+        update(tree, idx, value, node*2, s, mid);
+    }
+    else {
+        update(tree, idx, value, node*2+1, mid+1, e);
+    }
+    tree[node] = tree[node*2] + tree[node*2+1];
+}
+
+void solveBySegmentTree(vector<ll>& a, ll q, ll n) {
+    vector<ll> tree(4*n, 0);
+    
+    preprocessSegmentTree(tree, a, 0, n-1, 1);
+
+    while (q--) {
+        ll type;
+        cin >> type;
+        if (type == 1) {
+            ll idx, value;
+            cin >> idx >> value;
+            idx--;   
+            a[idx] = value;
+            update(tree, idx, value, 1, 0, n-1);
         }
-        else
-        {
-            int l = scd() - 1, r = scd() - 1;
-            prL(findSum(l, r));
+        else {
+            ll l, r;
+            cin >> l >> r;
+            l--; r--;
+            cout << query(tree, l, r, 1, 0, n-1) << endl;
         }
     }
+}
+
+void updateFenwickTree(vector<ll>& tree, ll idx, ll value) {
+    while (idx < tree.size()) {
+        tree[idx] += value;
+        idx += idx & -idx;
+    }
+}
+
+ll queryFenwickTree(vector<ll>& tree, ll idx) {
+    ll sum = 0;
+    while (idx > 0) {
+        sum += tree[idx];
+        idx -= idx & -idx;
+    }
+    return sum;
+}
+
+ll queryFenwickTree(vector<ll>& tree, ll l, ll r) {
+    return queryFenwickTree(tree, r) - queryFenwickTree(tree, l-1);
+}
+
+
+void solveByFenwickTree(vector<ll>& a, ll q, ll n) {
+    vector<ll> tree(n+1, 0);
+    
+    for(ll i = 0; i < n; i++) {
+        updateFenwickTree(tree, i+1, a[i]);
+    }
+
+    while (q--) {
+        ll type, l, r, idx, value;
+        cin >> type;
+        if (type == 1) {
+            cin >> idx >> value;
+            ll diff = value - a[idx-1];
+            a[idx-1] = value;
+            updateFenwickTree(tree, idx, diff);
+        } else {
+            cin >> l >> r;
+            cout << queryFenwickTree(tree, l, r) << endl;
+        }
+    }
+}
+
+
+int main() {
+    ios::sync_with_stdio(false);
+    cin.tie(0);
+    cout.tie(0);
+ 
+    
+    ll n, q;
+    cin >> n >> q;
+    vector<ll> a(n);
+    for(ll i = 0; i < n; i++) {
+        cin >> a[i];
+    }
+    
+    // solveBySegmentTree(a, q, n);
+
+    solveByFenwickTree(a, q, n);
     return 0;
 }
