@@ -16,4 +16,5 @@
 * https://www.geeksforgeeks.org/dsa/inplace-rotate-square-matrix-by-90-degrees/
 * https://www.geeksforgeeks.org/dsa/find-if-given-matrix-is-toeplitz-or-not/
 * https://www.geeksforgeeks.org/dsa/search-an-element-in-a-sorted-and-pivoted-array/
-* 
+* https://www.geeksforgeeks.org/dsa/leaders-in-an-array/
+* https://www.geeksforgeeks.org/dsa/rearrange-array-alternating-positive-negative-items-o1-extra-space/
