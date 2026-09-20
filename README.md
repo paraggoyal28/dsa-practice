@@ -17,3 +17,5 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 13. Max length of a window where the difference between any two elements in the window is atmost x - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/queue-and-deque-gfg-160/problem/longest-bounded-difference-subarray
 14. Implement Trie - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tries-gfg-160/problem/trie-insert-and-search0651
 15. Maximum XOR Value - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/tries-gfg-160/problem/maximum-xor-of-two-numbers-in-an-array#expected-approach-2-using-trie-on-log-m-time-and-on-log-m-space
+16. Directed cycle - https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
+17. Undirected Cycle - 
