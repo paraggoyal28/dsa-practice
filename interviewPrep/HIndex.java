@@ -1,3 +1,4 @@
+package InterviewPrep;
 /*
 problem: https://www.geeksforgeeks.org/batch/gfg-160-problems/track/sorting-gfg-160/problem/find-h-index--165609
 author: parag kumar goyal
@@ -46,7 +47,7 @@ TC: O(nlogn)
 SC: O(1)
 */
 
-class Solution {
+public class HIndex {
     private int citationsGreaterOrEqual(int[] citations, int target) {
         int noOfGreaterOrEqual = 0;
 

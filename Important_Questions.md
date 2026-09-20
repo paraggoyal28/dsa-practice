@@ -19,3 +19,6 @@
 * https://www.geeksforgeeks.org/dsa/leaders-in-an-array/
 * https://www.geeksforgeeks.org/dsa/rearrange-array-alternating-positive-negative-items-o1-extra-space/
 * https://www.geeksforgeeks.org/dsa/c-program-for-tower-of-hanoi/
+* https://www.geeksforgeeks.org/problems/anagram-1587115620/1
+* http://geeksforgeeks.org/problems/easy-string2212/1
+
