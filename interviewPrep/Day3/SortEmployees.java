@@ -11,7 +11,7 @@ public class SortEmployees {
         List<Employee> employeeList = Arrays.asList(
             new Employee("Aman", "IT", 50000, 28),
             new Employee("Rahul", "HR", 70000, 25),
-            new Employee("Aman", "IT", 50000, 22),
+            new Employee("AMAN", "IT", 50000, 22),
             new Employee("Zaid", "IT", 70000, 30),
             new Employee("Aman", "HR", 60000, 26)
         );
@@ -39,7 +39,7 @@ public class SortEmployees {
 
         System.out.println(employeeList);
 
-        Collections.sort(employeeList, Comparator.comparing(Employee::getName));
+        employeeList.sort(Comparator.comparing(Employee::getName, String.CASE_INSENSITIVE_ORDER));
         
         System.out.println("Comparison by Name");
 
