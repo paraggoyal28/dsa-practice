@@ -22,3 +22,4 @@
 * https://www.geeksforgeeks.org/problems/anagram-1587115620/1
 * https://www.geeksforgeeks.org/problems/easy-string2212/1
 * https://www.geeksforgeeks.org/problems/equalize-the-towers2804/1
+* https://www.geeksforgeeks.org/dsa/the-celebrity-problem/
