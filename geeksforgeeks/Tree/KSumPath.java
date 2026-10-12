@@ -6,7 +6,10 @@ SC: O(N)
 
 */
 
-class Solution {
+import java.util.HashMap;
+import java.util.Map;
+
+class KthSumPath {
     
     public int countAllPaths(Node root, int k) {
         // code here

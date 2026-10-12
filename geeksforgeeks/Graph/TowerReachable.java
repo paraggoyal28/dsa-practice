@@ -9,9 +9,10 @@ Brute Force Approach: DFS/BFS from each cell:
 TC: O(n*m*n*m), SC: O(n*m)
 */
 
-import java.util.Arrays;
+import java.util.LinkedList;
+import java.util.Queue;
 
-public class GFG {
+class MyGFG {
 
     static boolean isValid(int row, int col, int rows, int cols) {
         return row >= 0 && row < rows && col >= 0 && col < cols;
@@ -53,7 +54,7 @@ public class GFG {
 
         int count = 0;
 
-        for (int row = 0; row < rows; ++row) [
+        for (int row = 0; row < rows; ++row) {
             for (int col = 0; col < cols; ++col) {
                 boolean[][] visited = new boolean[rows][cols];
 
@@ -65,7 +66,7 @@ public class GFG {
                     count++;
                 }
             }
-        ]
+        }
 
         return count;
     }
@@ -77,9 +78,7 @@ TC: O(n*m)
 SC: O(n*m)
 */
 
-import java.util.Arrays;
-
-public class GFG {
+public class TowerReachable {
 
     
     static int[] dx = {1, -1, 0, 0};
@@ -121,8 +120,8 @@ public class GFG {
         Queue<int[]> stationP = new LinkedList<>();
         Queue<int[]> stationQ = new LinkedList<>();
 
-        boolean[][] reachP = new boolean[n][m];
-        boolean[][] reachQ = new boolean[n][m];
+        boolean[][] reachP = new boolean[rows][cols];
+        boolean[][] reachQ = new boolean[rows][cols];
 
         // Towers adjacent to station P (top boundary)
         // and to station Q (bottom boundary)

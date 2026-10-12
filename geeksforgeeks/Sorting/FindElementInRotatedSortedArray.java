@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(logn) SC: O(1)
 */
 
-class Solution {
+class FindElementInSortedRotatedArray {
     int search(int[] arr, int key) {
         // code here
         int n = arr.length;

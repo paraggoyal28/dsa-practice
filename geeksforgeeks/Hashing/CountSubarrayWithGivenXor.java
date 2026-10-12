@@ -6,7 +6,9 @@ time complexity can increase to O(n^2)
 SC: O(n) 
 */
 
-class Solution {
+import java.util.HashMap;
+
+class CountSubarraysWithGivenXor {
     public long subarrayXor(int arr[], int k) {
         // code here
         HashMap<Long, Integer> prevXorValueCount = new HashMap<>();

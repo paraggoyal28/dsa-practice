@@ -5,7 +5,9 @@ TC: O(N)
 SC: O(N)
 */
 
-class Solution {
+import java.util.HashMap;
+
+class ZeroSumSubarray {
     public int findSubarray(int[] arr) {
         // code here.
         // if I find a sum occuring again

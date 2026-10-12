@@ -5,9 +5,8 @@ TC: O(log(p))
 SC: O(1)
 */
 
-class Solution {
-  public:
-    int maxPeopleDefeated(int p) {
+public class MaxPeopleKilled {
+    public long maxPeopleDefeated(int p) {
         // the number of people killed
         // n*(n+1)*(2*n+1)/6 <= p 
         
@@ -28,9 +27,7 @@ class Solution {
                 high = mid - 1;
             }
         }
-        
-        
+
         return ans;
     }
-    
 };

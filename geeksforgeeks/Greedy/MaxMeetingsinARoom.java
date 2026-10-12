@@ -5,6 +5,11 @@ TC: O(NlogN)
 SC: O(N)
 */
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+
 class Meeting {
     int start;
     int end;
@@ -17,8 +22,8 @@ class Meeting {
     }
 }
 
-class Solution {
-    public static ArrayList<Integer> maxMeetings(int N, int[] S, int[] F) {
+class MaxMeetingsInARoom {
+    public static ArrayList<Integer> maxMeetings(int n, int[] S, int[] F) {
         List<Meeting> meetings = new ArrayList<>();
 
         // 1. Map raw arrays to a list of Meeting objects

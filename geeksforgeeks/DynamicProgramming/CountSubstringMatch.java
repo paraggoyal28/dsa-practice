@@ -17,7 +17,7 @@ of s2.
 
 import java.util.*;
 
-public class GFG {
+class CountMatch {
 
     static final int MOD = 1000000007;
 
@@ -60,7 +60,7 @@ using the first i characters of s1. For each character of s1:
 
 */
 
-public class GFG {
+class CountSubstring {
 
     static int MOD = 1000000007;
 
@@ -107,9 +107,8 @@ we either include the current character in the subsequence or skip it. This redu
 while maintaining the same time complexity
 */
 
-import java.util.*;
 
-public class GFG {
+public class CountSubstringMatch {
 
     static int MOD = 1000000007;
 

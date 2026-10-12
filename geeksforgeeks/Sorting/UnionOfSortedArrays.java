@@ -5,7 +5,10 @@ TC: O(NlogN + MlogM) where N and M are sizes of both arrays
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class UnionOfTwoSortArrays {
     public static ArrayList<Integer> findUnion(int[] a, int[] b) {
         Arrays.sort(a);
         Arrays.sort(b);

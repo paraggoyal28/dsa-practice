@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n*m) where n is the number of rows and m is the number of columns
 */
 
-class Solution {
+class SetMatrixZero {
     public void setMatrixZeroes(int[][] mat) {
         // code here
         boolean isFirstRowZero = false;

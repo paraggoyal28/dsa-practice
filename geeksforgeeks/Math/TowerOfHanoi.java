@@ -6,7 +6,7 @@ SC: O(n)
 */
 
 class GFG {
-    public void towerOfHanoi(int n, char fromRod, char toRod, char auxRod) {
+    public static void towerOfHanoi(int n, char fromRod, char toRod, char auxRod) {
         if (n == 0) {
             return;
         }

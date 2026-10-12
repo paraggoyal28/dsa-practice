@@ -5,7 +5,9 @@ TC: O(n) SC: O(1)
 */
 
 
-class Solution {
+import java.util.ArrayList;
+
+class SubWithGivenSum {
     static ArrayList<Integer> subarraySum(int[] arr, int target) {
         ArrayList<Integer> res = new ArrayList<>();
         int s = 0, e = 0;

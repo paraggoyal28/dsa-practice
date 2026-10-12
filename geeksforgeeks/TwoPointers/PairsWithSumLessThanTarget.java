@@ -5,7 +5,9 @@ TC: O(nlogn) where n is the size of array
 SC: O(1)
 */
 
-class Solution {
+import java.util.Arrays;
+
+class PairsCnt {
     static int countPairs(int[] arr, int target) {
       
         // Sort the array to use two pointer technique

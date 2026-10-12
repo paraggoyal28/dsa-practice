@@ -5,7 +5,9 @@ TC: O(N) where N is the number of elements in the array
 SC: O(N) 
 */
 
-class Solution {
+import java.util.HashMap;
+
+class CountSubarraysWithGivenXOR {
     public long subarrayXor(int arr[], int k) {
         // code here
         // a1^a2^a3 = x

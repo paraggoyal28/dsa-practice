@@ -4,7 +4,10 @@ author: parag kumar goyal
 TC: O(n) SC: O(k)
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.HashMap;
+
+class CountDistinctInEachWindow {
     ArrayList<Integer> countDistinct(int arr[], int k) {
         // code here
         HashMap<Integer, Integer> freq = new HashMap<>();

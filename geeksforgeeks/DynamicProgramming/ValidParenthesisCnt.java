@@ -6,7 +6,7 @@ author: parag kumar goyal
 
 // TC: O(n)
 // SC: O(1)
-class Solution {
+class ValidParenCnt {
     int findWays(int n) {
         // code here
         if (n % 2 != 0) return 0;
@@ -25,7 +25,7 @@ class Solution {
 // TC: O(n^2)
 // SC: O(n)
 // Formula C(n+1) = Summation (i = 0 to n) Ci*Cn-i
-class Solution {
+class ValidParenCount2 {
     int findWays(int n) {
         // If length is odd, no valid sequence exists
         if (n % 2 != 0) return 0;

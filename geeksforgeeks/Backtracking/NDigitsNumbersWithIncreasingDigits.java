@@ -5,7 +5,9 @@ TC: O(10Cn) where n <= 9
 SC: O(n) + O(10Cn) where n <= 9
 */
 
-public class Solution {
+import java.util.ArrayList;
+
+public class NDigitsNumbersWithIncreasingDigits {
 
     public static ArrayList<Integer> increasingNumbers(int n) {
         ArrayList<Integer> ans = new ArrayList<>();

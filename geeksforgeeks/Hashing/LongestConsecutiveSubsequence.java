@@ -5,7 +5,9 @@ TC: O(N)
 SC: O(N)
 */
 
-class Solution {
+import java.util.HashSet;
+
+class LongestConsSubsequence {
     public int longestConsecutive(int[] arr) {
         // code here
         HashSet<Integer> existingElements = new HashSet<>();

@@ -5,7 +5,9 @@ TC: O(N)
 SC: O(N)
 */
 
-class Solution {
+import java.util.Arrays;
+
+class ChooseAndSwap {
 
     String chooseandswap(String str) {
         // Code Here

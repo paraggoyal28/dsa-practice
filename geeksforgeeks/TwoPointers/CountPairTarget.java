@@ -6,7 +6,7 @@ TC: O(n), SC: O(1)
 
 */
 
-class Solution {
+class CountPairsTarget {
     static int countPairs(int[] arr, int target)
     {
         int n = arr.length;

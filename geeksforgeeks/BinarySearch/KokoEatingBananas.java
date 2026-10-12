@@ -5,7 +5,7 @@ TC: O(NlogM), where M is the max pile size and N is the number of piles
 SC: O(1) 
 */
 
-class Solution {
+class KokoEatingBananas {
     private long timeTakenToFinish(int[] arr, int speed) {
         long totalHours = 0;
         for (int pile : arr) {

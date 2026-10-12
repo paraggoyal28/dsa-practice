@@ -5,7 +5,9 @@ TC: O(N)
 SC: O(N) 
 */
 
-class Solution {
+import java.util.HashMap;
+
+class LongestSpan {
     public int equalSumSpan(int[] a1, int[] a2) {
         // code here
         int len = a1.length;

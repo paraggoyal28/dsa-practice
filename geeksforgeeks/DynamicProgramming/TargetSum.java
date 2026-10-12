@@ -5,7 +5,9 @@ TC: O(N*Target)
 SC: O(N*Target)
 */
 
-class Solution {
+import java.util.Arrays;
+
+class TargetSum {
     
     int[][] memo;
     int offset;

@@ -5,7 +5,9 @@ TC: O(NlogN * K) where N is the number of integers and K is the average number o
 SC: O(N*K) 
 */
 
-class Solution {
+import java.util.Arrays;
+
+class FormLargestNumber {
     public String findLargest(int[] arr) {
         int n = arr.length;
         String[] strNums = new String[n];

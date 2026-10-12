@@ -31,10 +31,12 @@ if ((int)inorder1.get(i) == (int)inorder2.get(j)) { // Unboxing to primitive
 
 */
 
-class Solution {
+import java.util.ArrayList;
+
+class FindCommonInTwoBSTs {
     
-    private static ArrayList<Integer> findCommon(ArrayList<Integer> inorder1, 
-                                                ArrayList<Integer> inorder2) {
+    private static ArrayList<Integer> findCommon(ArrayList<Integer> inorder1,
+                                                 ArrayList<Integer> inorder2) {
         int n = inorder1.size();
         int m = inorder2.size();
         int i = 0, j = 0;

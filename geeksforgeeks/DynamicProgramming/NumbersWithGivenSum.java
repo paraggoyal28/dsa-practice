@@ -8,7 +8,9 @@ Approach1: Recursively Try all - O(n*(9^n))
 SC: O(n)
 */
 
-class GFG {
+import java.util.Arrays;
+
+class GFG1 {
 
     private static int countRec(int n, int sum) {
         
@@ -60,7 +62,7 @@ TC: O(n*sum)
 SC: O(n*sum)
 */
 
-class GFG {
+class GFG2 {
 
     private static int countRec(int n, int sum, int[][] memo) {
         
@@ -123,9 +125,8 @@ TC: O(n*sum)
 SC: O(n*sum)
 */
 
-import java.util.Arrays;
 
-class Solution {
+public class NumbersWithGivenSum {
 
     static int countWays(int n, int sum) {
         if (sum > 9 * n) return -1;

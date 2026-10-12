@@ -24,7 +24,7 @@ Output: 1
 Explanation: There are only 1 coverage. Therefore answer for this test case is 1
 */
 
-class Solution {
+class CoverageOfAllZeros {
     public int findCoverage(int[][] mat) {
 
         int rows = mat.length;

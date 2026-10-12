@@ -7,7 +7,7 @@ author: parag kumar goyal
 TC: O(nlog10n)
 SC: O(1)
 */
-class Solution {
+class NumbersWithSpecificDiff {
     private int findSumOfDigits(int number) {
         int sumOfDigits = 0;
         
@@ -40,7 +40,7 @@ class Solution {
 TC: O(log10(n)*log2(n))
 SC: O(1)
 */
-class Solution {
+class NumbersWithDiff {
     private long findSumOfDigits(long number) {
         long sum = 0;
         while (number > 0) {

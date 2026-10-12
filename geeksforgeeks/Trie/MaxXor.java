@@ -11,36 +11,36 @@ Output: 7
 Explanation : The maximum possible XOR is 1 ^ 6 = 7.
 */
 
-class TrieNode {
-    TrieNode one, zero;
+class XorTrieNode {
+    XorTrieNode one, zero;
 
-    public TrieNode() {
+    public XorTrieNode() {
         one = null;
         zero = null;
     }
 }
 
-class Trie {
-    TrieNode root;
+class XorTrie {
+    XorTrieNode root;
 
-    public Trie() {
-        root = new TrieNode();
+    public XorTrie() {
+        root = new XorTrieNode();
     }
 
     public void insert(int num) {
-        TrieNode curr = root;
+        XorTrieNode curr = root;
         
         for (int i = 31; i >= 0; --i) {
             int bit = (num >> i) & 1;
 
             if (bit == 1) {
                 if (curr.one == null) {
-                    curr.one = new TrieNode();    
+                    curr.one = new XorTrieNode();
                 }
                 curr = curr.one;
             } else {
                 if (curr.zero == null) {
-                    curr.zero = new TrieNode();
+                    curr.zero = new XorTrieNode();
                 }
                 curr = curr.zero;
             }            
@@ -48,7 +48,7 @@ class Trie {
     }
 
     public int getMaxXor(int num) {
-        TrieNode curr = root;
+        XorTrieNode curr = root;
         int res = 0;
         for (int i = 31; i >= 0; --i) {
 
@@ -80,7 +80,7 @@ public class MaxXor {
         // code here
         if (arr == null || arr.length == 0) return 0;
 
-        Trie t = new Trie();
+        XorTrie t = new XorTrie();
         int n = arr.length;
         t.insert(arr[0]);
 

@@ -5,7 +5,9 @@ TC: O(H) where H is height of BST
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+
+class PredNSuccess {
     public ArrayList<Node> findPreSuc(Node root, int key) {
         // code here
         Node predecessor = null;

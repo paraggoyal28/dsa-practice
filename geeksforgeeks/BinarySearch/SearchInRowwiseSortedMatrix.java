@@ -5,7 +5,7 @@ TC: O(nlogm) where n is the number of rows and m is the number of columns in mat
 SC: O(1)
 */
 
-class Solution {
+class Search {
     private boolean binarySearch(int[] row, int x) {
         int start = 0;
         int end = row.length - 1;

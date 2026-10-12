@@ -19,7 +19,12 @@ TC: O(n*(number of operations))
 SC: O(n)
 */
 
-public class GFG {
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+public class RearrangeTheArray {
     static final int MOD = 1000000007;
 
     // Checks whether the array has
@@ -75,7 +80,7 @@ TC: O(nlogn)
 SC: O(n)
 
 */
-class Solution {
+class Rearrange2 {
     static final int MOD = 1000000007;
   
     // Computes (x^y) % MOD using binary exponentiation

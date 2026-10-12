@@ -5,7 +5,7 @@ TC: O(logn + logm) where n is the number of rows and m is the number of columns 
 SC: O(1)
 */
 
-class Solution {
+class SearchInSortedMatrix {
     public boolean searchMatrix(int[][] mat, int x) {
         // code here
         int startRow = 0;

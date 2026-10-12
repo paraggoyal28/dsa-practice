@@ -5,7 +5,7 @@ TC: O(n)
 SC: O(n) because of use of string builder
 */
 
-class Solution {
+class MaxNumberWithOneSwap {
     public String largestSwap(String s) {
         
         int l = -1, r = -1;

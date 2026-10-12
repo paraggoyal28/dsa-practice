@@ -7,7 +7,7 @@ SC: O(1)
 
 import java.util.Arrays;
 
-class Solution {
+class MeetingRooms {
     public static boolean canAttend(int[][] arr) {
         // 1. Handle edge cases: if there are 0 or 1 meetings, no conflict is possible.
         if (arr == null || arr.length <= 1) {

@@ -4,7 +4,9 @@ author: parag kumar goyal
 TC: O(n), SC: O(n)
 */
 
-class Solution {
+import java.util.HashMap;
+
+class LongestSubWithSumK {
     public int longestSubarray(int[] arr, int k) {
         // code here
         HashMap<Integer, Integer> prefixSumIdx = new HashMap<>();

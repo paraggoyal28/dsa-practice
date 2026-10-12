@@ -19,17 +19,25 @@ class Node {
 }
 */
 
-class Pair {
-    Node node;
-    int hd;
-    Pair(Node node, int hd) {
-        this.node = node;
-        this.hd = hd;
+
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+
+class Node {
+    int data;
+    Node left;
+    Node right;
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
     }
 }
 
 
-class Solution {
+class VerticalOrderTraversal {
     
     
     private static class Pair {
@@ -54,7 +62,7 @@ class Solution {
         }
         
         Queue<Pair> levelOrder = new LinkedList<>();
-        HashMap<Integer, ArrayList<Integer>> 
+        HashMap<Integer, ArrayList<Integer>>
             nodesByHd = new HashMap<>();
         int minHd = Integer.MAX_VALUE;
         int maxHd = Integer.MIN_VALUE;

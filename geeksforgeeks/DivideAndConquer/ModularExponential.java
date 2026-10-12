@@ -6,17 +6,16 @@ SC: O(1)
 */
 
 
-class Solution {
-  public:
-    int powMod(int x, int n, int M) {
+public class ModularExponential {
+  public long powMod(long x, long n, long M) {
         // code here
-        int res = 1;
+        long res = 1;
         while (n > 0) {
-            if (n&1) {
-                res = ((res%M) * 1LL * (x%M)) % M;
+            if (n % 2 == 1) {
+                res = ((res%M) * (x%M)) % M;
             }
             
-            x = ((x%M) * 1LL * (x%M)) % M;
+            x = ((x%M) * (x%M)) % M;
             n /= 2;
         }
         

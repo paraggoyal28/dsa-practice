@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n + m) where n is the size of original string and m is the size of pattern string 
 */
 
-class Solution {
+class Rotations {
     private int[] computeLPS(String pattern) {
         int n = pattern.length();
         int[] lps = new int[n];

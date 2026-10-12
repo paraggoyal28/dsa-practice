@@ -5,7 +5,10 @@ TC: O(N) where N is the size of array
 SC: O(K) where K is the size of window
 */
 
-class Solution {
+import java.util.ArrayDeque;
+import java.util.ArrayList;
+
+class KSizedSubarrayMax {
     public ArrayList<Integer> maxOfSubarrays(int[] arr, int k) {
         // Deque to store INDICES of array elements.
         // It helps us keep track of 'promising' candidates for the maximum.

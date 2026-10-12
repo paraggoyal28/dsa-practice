@@ -4,9 +4,13 @@ author: parag kumar goyal
 TC: O(N.LlogL) where N is the number of strings in the array and L is the maximum length of a string in the array
 */
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
-class Solution {
+class SameAnagramTogether {
     public ArrayList<ArrayList<String>> anagrams(String[] arr) {
         // code here
         ArrayList<ArrayList<String>> groupedAnagrams = 
@@ -26,7 +30,7 @@ class Solution {
                 k -> new ArrayList<>()).add(str);
         }
         
-        for (Map.Entry<String, List<String>> anagramEntry: 
+        for (Map.Entry<String, List<String>> anagramEntry:
             sameAnagrams.entrySet()) {
             groupedAnagrams.add(new ArrayList<>(anagramEntry.getValue()));        
         }

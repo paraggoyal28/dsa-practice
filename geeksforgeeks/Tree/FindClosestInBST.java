@@ -3,7 +3,9 @@ problem: https://www.geeksforgeeks.org/problems/find-the-closest-element-in-bst/
 author: parag kumar goyal
 */
 
-class Solution {
+import java.util.ArrayList;
+
+class FindClosesInBST {
     
     static void findInorder(Node root, ArrayList<Integer> inorderSeq) {
         if (root != null) {
@@ -38,7 +40,7 @@ class Solution {
 /* TC: O(H)
 SC: O(1)
 */
-class Solution {
+class FindClosesInBST2 {
     
     // Function to find the least absolute difference between any node
     // value of the BST and the given integer.

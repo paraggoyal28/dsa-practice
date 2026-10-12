@@ -11,7 +11,7 @@ SC: O(n)
 
 import java.util.*;
 
-public class GFG {
+class Ways {
 
     public int countWays(int n, int m) {
 
@@ -39,7 +39,7 @@ TC: O(n)
 SC: O(n)
 */
 
-public class GFG {
+class Ways2 {
 
     private static final int MOD = 1000000007;
 

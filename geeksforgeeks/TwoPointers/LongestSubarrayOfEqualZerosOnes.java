@@ -4,7 +4,9 @@ author: parag kumar goyal
 TC: O(n) SC: O(n)
 */
 
-class Solution {
+import java.util.HashMap;
+
+class LongestSubOfEqualOnesAndZeros {
     public int maxLen(int[] arr) {
         // Your code here
         // convert 0s to -1s

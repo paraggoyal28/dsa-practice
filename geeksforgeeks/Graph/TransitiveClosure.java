@@ -3,12 +3,14 @@ problem: https://www.geeksforgeeks.org/problems/transitive-closure-of-a-graph093
 author: parag kumar goyal
 */
 
+import java.util.BitSet;
+
 /*
 Floyd Warshall
 TC: O(N^3)
 SC: O(N^2)
 */
-class Solution {
+class Solution11 {
 
     static int[][] transitiveClosure(int N, int[][] graph) {
 
@@ -47,7 +49,7 @@ O(N³) → O(N³ / 64)
 */
 
 
-class Solution {
+class Solution12 {
 
     static int[][] transitiveClosure(int N, int[][] graph) {
 
@@ -88,12 +90,12 @@ DFS -
 O(V * (V + E))
 */
 
-class Solution {
+class Solution13 {
 
     static int[][] transitiveClosure(int N, int[][] graph) {
 
         int[][] tc = new int[N][N];
-`       
+
         /* for a particular source node
             check for each node can be reachable or not
             i -> 

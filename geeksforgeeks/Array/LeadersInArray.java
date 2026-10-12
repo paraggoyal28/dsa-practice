@@ -5,7 +5,10 @@ TC: O(n) SC: O(1)
 */
 
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Collections;
+
+public class LeadersInArray {
     static ArrayList<Integer> leaders(int arr[]) {
         ArrayList<Integer> leaderArray = new ArrayList<>();
 

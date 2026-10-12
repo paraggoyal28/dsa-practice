@@ -30,7 +30,7 @@ class NodeMeta {
     }
 }
 
-class Solution {
+class LargestBST {
 
     private static NodeMeta largestBSTUtil(Node root, int[] ans) {
         if (root == null) {

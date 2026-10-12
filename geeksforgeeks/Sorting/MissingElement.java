@@ -5,7 +5,10 @@ TC: O(NlogN + (range))
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class MissingElement {
     public ArrayList<Integer> missingRange(int[] arr, int low, int high) {
         ArrayList<Integer> missingValues = new ArrayList<>();
         

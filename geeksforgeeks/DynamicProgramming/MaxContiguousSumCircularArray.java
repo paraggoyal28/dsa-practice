@@ -5,7 +5,7 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
+class MaxContiguousSumCircularArray {
     public int maxCircularSum(int arr[]) {
         // code here
         int totalSum = arr[0];

@@ -5,7 +5,7 @@ TC: O(n) where n is the size of array
 SC: O(1)
 */
 
-class Solution {
+public class LastMomentBeforeFall {
     public int getLastMoment(int n, int left[], int right[]) {
         // code here
         int lastMoment = 0;

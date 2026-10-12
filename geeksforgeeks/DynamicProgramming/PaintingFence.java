@@ -6,9 +6,8 @@ SC: O(1)
 
 */
 
-class Solution {
-  public:
-    int countWays(int n, int k) {
+public class PaintingFence {
+  public int countWays(int n, int k) {
         // code here
         if (n == 0) return 0;
         

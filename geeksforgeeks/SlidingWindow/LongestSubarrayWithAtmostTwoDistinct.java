@@ -5,7 +5,9 @@ TC: O(N)
 SC: O(N)
 */
 
-class Solution {
+import java.util.HashMap;
+
+class LongestSubWithAtmostTwoDistinct {
     public int totalElements(int[] arr) {
         // code here
         HashMap<Integer, Integer> freq = new HashMap<>();

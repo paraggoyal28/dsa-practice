@@ -5,7 +5,7 @@ TC: O(n^2) where n is the size of matrix
 SC: O(1)
 */
 
-class Solution {
+class RotateBy90 {
     
     private void swap(int[][] mat, int row1, int col1, int row2, int col2) {
         int temp = mat[row1][col1];

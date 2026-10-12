@@ -4,7 +4,9 @@ author: parag kumar goyal
 TC: O(N) SC: O(N)
 */
 
-class Solution {
+import java.util.HashMap;
+
+class SubarraysWithSumK {
     public int cntSubarrays(int[] arr, int k) {
         // code here
         HashMap<Integer, Integer> prefixSumMp = new HashMap<>();

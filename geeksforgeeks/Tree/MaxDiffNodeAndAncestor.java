@@ -6,7 +6,7 @@ SC: O(N)
 where N is the size of tree
 */
 
-class Solution {
+class MaxDiffNodeAndAncestor {
     // Global variable to store the result
     int maxDiffValue;
 

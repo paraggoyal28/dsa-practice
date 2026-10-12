@@ -4,7 +4,10 @@ author: parag kumar goyal
 TC: O(nlogn) where n is the size of the array
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Arrays;
+
+class ClosestPairSum {
     public ArrayList<Integer> closestPair(int[] arr, int target) {
        
         Arrays.sort(arr);

@@ -5,7 +5,10 @@ TC: O(N) where N is the number of nodes
 SC: O(H) where H is the height of tree
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class KthAncestorNode {
     
     private boolean findPathToNode(Node root, int node, List<Integer> pathToNode) {
         if (root == null) {

@@ -9,7 +9,7 @@ Approach 1:  Recursion + Backtracking - O(2^(n^2)) Time and O(n^2) Space
 
 import java.util.*;
 
-class GFG {
+class MyMaze {
 
     static boolean isSafe(int row, int col, int n, int[][] mat) {
         return (row >= 0 && row < n && col >= 0 && col < n && mat[row][col] != 0);
@@ -77,7 +77,7 @@ class GFG {
 
 
         for (int i = 0; i < n; ++i) {
-            ArrayList<Integer> row = new ArrayList<>(Collections.nCopies(n, 0));
+            row = new ArrayList<>(Collections.nCopies(n, 0));
 
             path.add(row);
         }
@@ -105,9 +105,9 @@ Another Approach: Finding Shortest Valid Path - O(n^2*maxJump) and space - O(n^2
 Use memoization
 */
 
-public class GFG {
+class RatMazeWithObstacles {
 
-    static boolean findPath(int[][] mat, ArrayList<ArrayList<Integer>> path, boolean[][] dp,
+    static boolean findPath(int[][] mat, ArrayList<ArrayList<Integer>> path, int[][] dp,
         int row, int col, int n) {
 
         // if current cell is out of bounds or current cell is blocked return false

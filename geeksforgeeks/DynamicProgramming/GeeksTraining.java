@@ -5,7 +5,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class Solution1 {
     public int maximumPoints(int mat[][]) {
         int n = mat.length;
         if (n == 0) return 0;
@@ -43,7 +43,7 @@ class Solution {
 // if there are variable activities
 // O(n*m*m) where n is the number of days and m is the number of activities
 // space: O(m)
-class Solution {
+class Solution2 {
     public int maximumPoints(int mat[][]) {
         int n = mat.length;
         int m = mat[0].length; // Variable number of activities
@@ -78,7 +78,7 @@ class Solution {
 
 // O(n*m) where n is the number of days and m is the number of activities
 // space: O(m)
-class Solution {
+class Solution3 {
     public int maximumPoints(int mat[][]) {
         int n = mat.length;
         int m = mat[0].length;
@@ -108,11 +108,12 @@ class Solution {
                 }
             }
         }
-    }
 
-    int res = -1;
-    for (int val: prev) {
-        res = Math.max(res, val);
+
+        int res = -1;
+        for (int val : prev) {
+            res = Math.max(res, val);
+        }
+        return res;
     }
-    return res;
 }

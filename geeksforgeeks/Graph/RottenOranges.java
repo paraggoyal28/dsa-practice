@@ -6,9 +6,10 @@ SC: O(N*M)
 */
 
 
+import java.util.LinkedList;
+import java.util.Queue;
 
-
-class Solution {
+class RottenOrangesUtil {
     private static class Coordinate {
         int row;
         int col;

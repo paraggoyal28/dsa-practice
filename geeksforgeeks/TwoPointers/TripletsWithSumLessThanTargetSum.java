@@ -6,7 +6,9 @@ SC: O(1)
 */
 
 
-class Solution {
+import java.util.Arrays;
+
+class TripletsWithSumLessThanTarget {
     long countTriplets(int n, int sum, long arr[]) {
         
         if (arr == null || n < 3) return 0;

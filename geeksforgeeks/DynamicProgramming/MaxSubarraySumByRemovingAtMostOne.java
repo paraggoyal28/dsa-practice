@@ -5,7 +5,7 @@ TC: O(n) where n is the length of the array
 SC: O(1)
 */
 
-class Solution {
+class MaxSubSum {
     public int maxSumSubarray(int[] arr) {
         // code here
         int n = arr.length;

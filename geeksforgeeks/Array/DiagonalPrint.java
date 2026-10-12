@@ -5,7 +5,9 @@ TC: O(N * M) where N is number of rows and M is number of cols
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+
+class DiagonalPrint {
     static ArrayList<Integer> diagView(int mat[][]) {
         ArrayList<Integer> ans = new ArrayList<>();
         int rows = mat.length;

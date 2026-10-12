@@ -6,7 +6,7 @@ TC: O(n^2logn + K) where n is the size of input list and K is the total number o
 
 import java.util.*;
 
-class Solution {
+class TripletsWithZeroSum {
     public List<List<Integer>> findTriplets(int[] arr) {
         List<List<Integer>> triplets = new ArrayList<>();
         int n = arr.length;
@@ -21,7 +21,7 @@ class Solution {
             for (int j = i + 1; j < n; ++j) {
                 int target = -arr[i] - arr[j];
 
-                List<Integer> indices = idxMap.get(target);
+                List<Integer> indices = idxMp.get(target);
 
                 // target found
                 if (indices != null) {

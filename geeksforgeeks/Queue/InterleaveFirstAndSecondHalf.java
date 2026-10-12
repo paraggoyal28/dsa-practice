@@ -5,8 +5,12 @@ TC: O(N)
 SC: O(N)
 */
 
-/* With aux stack */ 
-class Solution {
+import java.util.LinkedList;
+import java.util.Queue;
+import java.util.Stack;
+
+/* With aux stack */
+class Interleave1 {
     public void rearrangeQueue(Queue<Integer> q) {
         // code here
         
@@ -51,7 +55,7 @@ class Solution {
 
 /* With a aux queue */
 
-class Solution {
+class Interleave2 {
     public void rearrangeQueue(Queue<Integer> q) {
         int n = q.size();
         

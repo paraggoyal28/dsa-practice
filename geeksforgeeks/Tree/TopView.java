@@ -5,6 +5,11 @@ TC: O(N)
 SC: O(N)
 */
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+import java.util.Queue;
+
 class Pair {
     Node node;
     int hd;
@@ -14,7 +19,7 @@ class Pair {
     }
 }
 
-class Solution {
+class TopView {
     public ArrayList<Integer> topView(Node root) {
         ArrayList<Integer> topViewNodes = new ArrayList<>();
         if (root == null) return topViewNodes;

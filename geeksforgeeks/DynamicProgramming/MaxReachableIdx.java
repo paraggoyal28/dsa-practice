@@ -5,9 +5,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
-    
-    
+class MaxReachableIndex {
     public int maxIndexDifference(String s) {
         // code here
         // base condition if no 'a' exists return -1

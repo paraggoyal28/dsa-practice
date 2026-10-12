@@ -5,8 +5,10 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
-    public int maxArea(List<Integer> height) {
+import java.util.List;
+
+class MaxAreasBetweenBars {
+    public long maxArea(List<Integer> height) {
         if (height == null || height.size() < 2) {
             return 0;
         }

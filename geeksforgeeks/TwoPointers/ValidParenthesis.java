@@ -5,7 +5,7 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
+class ValidParenthesis {
     public int countMinReversals(String s) {
         int n = s.length();
 

@@ -5,7 +5,10 @@ TC: O(NlogN) where N is the number of students
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Collections;
+
+class ChocoDistribution {
     public long findMinDiff(ArrayList<Integer> a, int n, int m) {
         if (m == 0 || n == 0) return 0;
         

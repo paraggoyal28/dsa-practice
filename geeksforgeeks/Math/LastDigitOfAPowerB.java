@@ -5,9 +5,9 @@ author: parag kumar goyal
 TC: O(len_b) where len_b is the length of b which is the exponent
 */
 
-class Solution {
+class LastDigitOfAPowerB {
 
-    private int module(String base, int exp) {
+    private int modulo(String base, int exp) {
         int ans = 0;
 
         for (int idx = 0, n = base.length(); idx < n; ++idx) {

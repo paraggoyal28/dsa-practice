@@ -6,12 +6,14 @@ SC: O(n) where n is the sum of length of all strings
 */
 
 
-class TrieNode {
-    public TrieNode[] children;
+import java.util.ArrayList;
+
+class MyTrieNode {
+    public MyTrieNode[] children;
     int count;
-    
-    TrieNode() {
-        children = new TrieNode[26];
+
+    MyTrieNode() {
+        children = new MyTrieNode[26];
         for (int i = 0; i < 26; ++i) {
             children[i] = null;
         }
@@ -27,18 +29,18 @@ class TrieNode {
     }
 }
 
-class Trie {
-    TrieNode root;
-    
-    Trie() {
-        this.root = new TrieNode();
+class MyTrie {
+    MyTrieNode root;
+
+    MyTrie() {
+        this.root = new MyTrieNode();
     }
     
     void insert(String word) {
-        TrieNode curr = root;
+        MyTrieNode curr = root;
         for (char ch: word.toCharArray()) {
             if (curr.children[ch - 'a'] == null) {
-                curr.children[ch - 'a'] = new TrieNode();
+                curr.children[ch - 'a'] = new MyTrieNode();
             }
             curr = curr.children[ch - 'a'];
             curr.incrementCount();
@@ -46,7 +48,7 @@ class Trie {
     }
     
     String findPrefix(String word) {
-        TrieNode curr = root;
+        MyTrieNode curr = root;
         StringBuilder prefixSb = new StringBuilder();
         for (char ch : word.toCharArray()) {
             curr = curr.children[ch - 'a']; // the character already present
@@ -59,11 +61,11 @@ class Trie {
     }
 }
 
-class Solution {
+class ShortestUniquePrefix {
     public ArrayList<String> findPrefixes(String[] arr) {
         // code here
         ArrayList<String> ans = new ArrayList<>();
-        Trie trie = new Trie();
+        MyTrie trie = new MyTrie();
         for (String word: arr) {
             trie.insert(word);
         }

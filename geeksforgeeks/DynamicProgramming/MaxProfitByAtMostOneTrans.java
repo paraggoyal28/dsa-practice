@@ -6,7 +6,7 @@ SC: O(1)
 */
 
 /* finding max contiguous subarray sum of differences*/
-class Solution {
+class MaxProfitByMostOneTransaction {
     public int maxProfit(int[] prices) {
         // Code here
         int n = prices.length;
@@ -24,7 +24,7 @@ class Solution {
 }
 
 /* finding least price to buy and sell it at today */
-class Solution {
+class MaxProfitByMostOneTransaction2 {
     public int maxProfit(int[] prices) {
         int n = prices.length;
         if (n <= 1) return 0;

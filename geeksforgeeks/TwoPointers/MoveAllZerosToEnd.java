@@ -5,7 +5,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class MoveZerosToEnd {
     void pushZerosToEnd(int[] arr) {
         // code here
         int start = 0;

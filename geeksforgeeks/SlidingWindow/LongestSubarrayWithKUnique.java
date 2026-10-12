@@ -1,13 +1,15 @@
 /*
 problem: https://www.geeksforgeeks.org/problems/longest-k-unique-characters-substring0853/1
 author: parag kumar goyal
-*/.
+*/
+
+import java.util.HashMap;
 
 /*
 TC: O(n)
 SC: O(n)
 */
-class Solution {
+public class LongestSubarrayWithKUnique {
     public int longestKSubstr(String s, int k) {
         // code here
         int uniqueCharacters = 0;
@@ -46,7 +48,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class LongestSubarraySolution2 {
     public int longestKSubstr(String s, int k) {
 
         int uniqueChars = 0;

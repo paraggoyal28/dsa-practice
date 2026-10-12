@@ -6,7 +6,10 @@ TC: O(N) where N is the size of arr
 SC: O(1)
 */
 
-class Solution {
+import java.util.List;
+import java.util.Stack;
+
+class CheckBSTInorder {
     public boolean canRepresentBST(List<Integer> arr) {
         Stack<Integer> stck = new Stack<>();
         int root = Integer.MIN_VALUE;
@@ -23,11 +26,11 @@ class Solution {
             // it means we are moving to the right subtree. Pop elements
             // to update the root. Lower bound
             while (!stck.isEmpty() && stck.peek() < value) {
-                root = stack.pop();
+                root = stck.pop();
             }
 
 
-            stack.push(value);
+            stck.push(value);
         }
 
         return true;

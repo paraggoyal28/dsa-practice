@@ -5,7 +5,7 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
+class Maxxor2 {
     public int maxSubarrayXOR(int[] arr, int k) {
         // code here
         int maxXorValue = 0;
@@ -26,7 +26,7 @@ class Solution {
 }
 
 /* Slightly more cleaner */
-class Solution {
+class Maxxor {
     public int maxSubarrayXOR(int[] arr, int k) {
         int n = arr.length;
         if (n < k) return 0; // Edge case safety

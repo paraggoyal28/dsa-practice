@@ -6,7 +6,7 @@ SC: O(N)
 */
 import java.util.Arrays;
 
-class Solution {
+class Anagrams {
     public static boolean areAnagrams(String s1, String s2) {
         // code here
         int[] s1Freq = new int[256];

@@ -14,7 +14,7 @@ SC: O(n1*n2)
 
 /*Brute Force*/
 
-class Solution {
+class IncreaseLCSByOne {
 
     private static int findLCS(String s1, String s2) {
         int n = s1.length(), m = s2.length();
@@ -56,7 +56,7 @@ class Solution {
 
 /* Optimized Solution */
 
-class Solution {
+class IncreaseLCS {
 
 
     int waysToIncreaseLCSBy1(String s1, String s2) {

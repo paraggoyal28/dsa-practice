@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n) where n is the length of array, SC: O(1)
 */
 
-class Solution {
+class EquilPoint {
     public static int findEquilibrium(int arr[]) {
         // code here
         // calculate left prefix sum

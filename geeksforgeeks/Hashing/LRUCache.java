@@ -25,7 +25,7 @@ class LinkedLRUCache<K, V> extends LinkedHashMap<K, V> {
 
     @Override
     protected boolean removeEldestEntry(Map.Entry<K, V> eldest) {
-        size() > capacity;
+        return size() > capacity;
     } 
 }
 

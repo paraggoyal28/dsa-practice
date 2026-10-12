@@ -7,7 +7,7 @@ SC: O(1)
 
 
 
-class Solution {
+class MaxNoOfOnes {
     public int maxOnes(int arr[], int k) {
         // code here
         int maxOnesLength = 0;
@@ -19,7 +19,7 @@ class Solution {
                zeroCnt++; 
             }
             
-            while (cnt > k) {
+            while (zeroCnt > k) {
                 if (arr[start] == 0) {
                     zeroCnt--;
                 }

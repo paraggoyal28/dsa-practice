@@ -5,14 +5,12 @@ TC: O(min(a, b))
 SC: O(1)
 */
 
-class Solution {
-  public:
-    // Function to find total number of unique paths.
-    int NumberOfPath(int a, int b) {
+public class NumberOfUniquePaths {
+  public long NumberOfPath(int a, int b) {
     
-        long long res = 1;
+        long res = 1;
         int n = a + b - 2;
-        int r = min(a, b) - 1;
+        int r = Math.min(a, b) - 1;
         
         // r = a - 1
         // 1 to a - 1

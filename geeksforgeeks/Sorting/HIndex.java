@@ -5,7 +5,7 @@ TC: O(N) where N is the size of papers
 SC: O(N)
 */
 
-class Solution {
+class HIndeXFind {
     public int hIndex(int[] citations) {
         // code here
         int n = citations.length;

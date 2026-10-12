@@ -7,7 +7,7 @@ SC: O(n) for storing catalan numbers
 
 import java.util.*;
 
-public class Solution {
+public class NumberOfBSTsFromArray {
     private static final int MOD = 1000000007;
 
     private static class Pair {
@@ -68,7 +68,7 @@ TC: O(NlogN)
 SC: O(N)
 */
 
-public class Solution {
+class NumberOfBSTs {
 
     static final int MOD = 1000000007;
 
@@ -84,7 +84,7 @@ public class Solution {
 
         fact[0] = 1;
 
-        for (int i = 1; i <= n; ++i) {
+        for (int i = 1; i <= maxN; ++i) {
             fact[i] = (fact[i-1] * i) % MOD;
         }
 

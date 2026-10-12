@@ -5,8 +5,8 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
-    int maxProduct(int[] arr) {
+public class MaximumProductSubarray {
+    public int maxProduct(int[] arr) {
         // code here
         int n = arr.length;
         if (n == 0) return 0;

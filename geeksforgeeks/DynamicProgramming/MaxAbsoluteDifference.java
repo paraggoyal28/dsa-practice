@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n), SC: O(n)
 */
 
-class Solution {
+class MaxAbsDifference {
 
     private int[] buildLeftMax(int[] arr) {
         int n = arr.length;

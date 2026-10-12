@@ -6,7 +6,10 @@ copy the array value into final result
 SC: O(n*n!) to store all permutations
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class GenerateAllPermutations {
 
     /**
      * Main entry point for generating distinct permutations.

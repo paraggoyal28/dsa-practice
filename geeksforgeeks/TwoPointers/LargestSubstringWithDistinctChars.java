@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n), SC: O(1)
 */
 
-class Solution {
+class LargestSubstringWithDistinctChars {
     
     public int longestUniqueSubstr(String s) {
         // code here

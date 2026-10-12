@@ -5,7 +5,10 @@ TC; O(N + M), where N is the size of arr1 and M is size of arr2
 SC; O(1) 
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.List;
+
+class ClosestPairWithTargetSum {
     public static ArrayList<Integer> findClosestPair(int arr1[], int arr2[], int x) {
         // code here
         ArrayList<Integer> res = new ArrayList<>();

@@ -6,7 +6,7 @@ TC: O(nlogn), SC: O(1)
 
 import java.util.Arrays;
 
-class GFG {
+class NoOfPossibleTriangles {
     
     static int countTriangles(int[] arr) {
         int res = 0;

@@ -14,7 +14,7 @@ For each k starting from 2 we keep checking till when our baseSum is less than n
 
 */
 
-public class Main {
+class ExpressNumberAsConsecutiveSum {
 
     static int getCount(int n)
     {

@@ -30,9 +30,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
-    
-    
+class SmallestNonZeroNumber {
     
     public int find(int[] arr) {
         // code here

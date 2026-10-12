@@ -1,10 +1,12 @@
+import java.util.Vector;
+
 /*
 problem: https://www.geeksforgeeks.org/problems/next-smallest-palindrome4740/1
 author: parag kumar goyal
 TC: O(N)
 SC: O(N)
 */
-class Solution {
+class NextSmallestPalindrome {
 
     boolean isHighest(int num[], int n) {
         for (int i = 0; i < n; ++i) {

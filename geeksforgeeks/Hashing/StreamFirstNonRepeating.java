@@ -5,7 +5,10 @@ TC: O(N)
 SC: O(N)
 */
 
-class Solution {
+import java.util.ArrayDeque;
+import java.util.Deque;
+
+class NonRepeating {
     public String firstNonRepeating(String s) {
         // code here
         // keep track of freq of elements in 
@@ -44,7 +47,7 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
+class NonRepeating2 {
     public String firstNonRepeating(String s) {
         int n = s.length();
         int[] freq = new int[26];

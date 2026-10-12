@@ -5,7 +5,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class MaxSumNonAdjacent {
     int findMaxSum(int arr[]) {
         // code here
         int n = arr.length;

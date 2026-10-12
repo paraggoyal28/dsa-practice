@@ -5,7 +5,7 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class MoveAllZerosToEnd {
     void swap(int[] arr, int idx1, int idx2) {
         int temp = arr[idx1];
         arr[idx1] = arr[idx2];

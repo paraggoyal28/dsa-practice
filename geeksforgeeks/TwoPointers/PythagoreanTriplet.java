@@ -5,9 +5,9 @@ TC: O(N)
 SC: O(1)
 */
 
-class Solution {
+class PythogreanTriplet {
     boolean pythagoreanTriplet(int[] arr) {
-        int n = arr.length();
+        int n = arr.length;
         int maxEle = 0;
         boolean[] vis = new boolean[maxEle + 1];
 

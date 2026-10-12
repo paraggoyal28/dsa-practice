@@ -6,7 +6,11 @@ The idea is to subtract the length of longest increasing sequence from the total
 SC: O(1)
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
+class MinDeletionsToSort {
     
     
     private int findLISLength(int[] nums) {

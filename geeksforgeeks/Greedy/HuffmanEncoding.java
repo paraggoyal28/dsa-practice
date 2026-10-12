@@ -5,7 +5,11 @@ TC: O(NlogN)
 SC: O(N) where N is the number of keys
 */
 
-class Solution {
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.PriorityQueue;
+
+class Soln {
     
     private static class Node {
         Node left, right;
@@ -36,7 +40,7 @@ class Solution {
     }   
     
     
-    private void preorder(Node root, ArrayList<String> huffmanEncoding, 
+    private void preorder(Node root, ArrayList<String> huffmanEncoding,
         StringBuilder code) {
         if (root!=null) {
             

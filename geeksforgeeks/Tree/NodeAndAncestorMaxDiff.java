@@ -19,7 +19,7 @@ class Node
 }
 */
 
-class Solution {
+class NodeAndAncestorMaxDiff {
     
     int maxDiffUtil(Node root, int maxAncestor) {
         if (root == null) {

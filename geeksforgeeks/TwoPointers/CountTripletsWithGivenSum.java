@@ -4,7 +4,7 @@ author: parag kumar goyal
 TC: O(n^2) SC: O(1)
 */
 
-class Solution {
+class Count {
     public long countTriplets(int[] arr, int target) {
         int n = arr.length;
         long res = 0;

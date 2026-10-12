@@ -5,7 +5,7 @@ TC: O(n) where n is the length of string
 SC: O(1) 
 */
 
-class Solution {
+class Atoi {
     
     private boolean nonDigitChar(char ch) {
         return ch < '0' || ch > '9';

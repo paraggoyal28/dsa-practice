@@ -5,28 +5,19 @@ TC: O(n)
 SC: O(1)
 */
 
-class Solution {
+class KadaneAlgorithm {
 
     int maxSubarraySum(int[] arr) {
         // Code here
-        int start = 0, end = 0, tempStart = 0;
+        if (arr == null || arr.length == 0) return 0;
+
         int maxSum = arr[0];
         int maxCurrentSum = arr[0];
         
         int n = arr.length;
         for (int i = 1; i < n; ++i) {
-            if (arr[i] > maxCurrentSum + arr[i]) {
-                maxCurrentSum = arr[i];
-                tempStart = i;
-            } else {
-                maxCurrentSum += arr[i];
-            }
-
-            if (maxCurrentSum > maxSum) {
-                maxSum = maxCurrentSum;
-                start = tempStart;
-                end = i;
-            }
+            maxCurrentSum = Math.max(arr[i], arr[i] + maxCurrentSum);
+            maxSum = Math.max(maxSum, maxCurrentSum);
         }
         
         return maxSum;

@@ -7,7 +7,7 @@ SC: O(m*n)
 
 
 
-class Solution {
+class MaxProduct {
     public int maxDotProduct(int n, int m, int a[], int b[]) {
         
         int[][] dp = new int[m+1][n+1];
