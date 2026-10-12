@@ -20,3 +20,4 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 16. Directed cycle - https://www.geeksforgeeks.org/problems/detect-cycle-in-a-directed-graph/1
 17. Search in Rotated Sorted Array - `https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/search-in-a-rotated-array4618`
 18. Gas Station - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/greedy-gfg-160/problem/circular-tour-1587115620
+19. Undirected Graph cycle - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/detect-cycle-in-an-undirected-graph
