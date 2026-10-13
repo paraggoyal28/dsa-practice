@@ -23,3 +23,4 @@
 * https://www.geeksforgeeks.org/problems/easy-string2212/1
 * https://www.geeksforgeeks.org/problems/equalize-the-towers2804/1
 * https://www.geeksforgeeks.org/dsa/the-celebrity-problem/
+* https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/subset-sum-problem-1611555638

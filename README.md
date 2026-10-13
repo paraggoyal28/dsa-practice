@@ -21,3 +21,4 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 17. Search in Rotated Sorted Array - `https://www.geeksforgeeks.org/batch/gfg-160-problems/track/searching-gfg-160/problem/search-in-a-rotated-array4618`
 18. Gas Station - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/greedy-gfg-160/problem/circular-tour-1587115620
 19. Undirected Graph cycle - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/detect-cycle-in-an-undirected-graph
+20. Subset Sum Problem - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/subset-sum-problem-1611555638
