@@ -23,3 +23,4 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 19. Undirected Graph cycle - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/graph-gfg-160/problem/detect-cycle-in-an-undirected-graph
 20. Subset Sum Problem - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/subset-sum-problem-1611555638
 21. Shortest path in a DAG - https://www.geeksforgeeks.org/dsa/shortest-path-for-directed-acyclic-graphs/
+22. Prim's MST - https://www.geeksforgeeks.org/dsa/prims-minimum-spanning-tree-mst-greedy-algo-5/
