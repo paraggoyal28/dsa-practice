@@ -24,3 +24,5 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 20. Subset Sum Problem - https://www.geeksforgeeks.org/batch/gfg-160-problems/track/dynamic-programming-gfg-160/problem/subset-sum-problem-1611555638
 21. Shortest path in a DAG - https://www.geeksforgeeks.org/dsa/shortest-path-for-directed-acyclic-graphs/
 22. Prim's MST - https://www.geeksforgeeks.org/dsa/prims-minimum-spanning-tree-mst-greedy-algo-5/
+23. Cycle Sort - https://www.geeksforgeeks.org/dsa/minimum-number-swaps-required-sort-array/
+24. Delete a node in BST - https://www.geeksforgeeks.org/dsa/deletion-in-binary-search-tree/
