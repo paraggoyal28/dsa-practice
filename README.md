@@ -26,3 +26,6 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 22. Prim's MST - https://www.geeksforgeeks.org/dsa/prims-minimum-spanning-tree-mst-greedy-algo-5/
 23. Cycle Sort - https://www.geeksforgeeks.org/dsa/minimum-number-swaps-required-sort-array/
 24. Delete a node in BST - https://www.geeksforgeeks.org/dsa/deletion-in-binary-search-tree/
+25. Median in a stream - https://www.geeksforgeeks.org/dsa/median-of-stream-of-integers-running-integers/
+26. Delete in a BST - https://www.geeksforgeeks.org/dsa/deletion-in-binary-search-tree/
+27. Merge Sorted WIthout Extra Space - https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
