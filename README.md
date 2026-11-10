@@ -29,3 +29,4 @@ Solutions  for problems in codeforces, cses, codechef, leetcode, other coding pl
 25. Median in a stream - https://www.geeksforgeeks.org/dsa/median-of-stream-of-integers-running-integers/
 26. Delete in a BST - https://www.geeksforgeeks.org/dsa/deletion-in-binary-search-tree/
 27. Merge Sorted WIthout Extra Space - https://leetcode.com/problems/merge-sorted-array/description/?envType=study-plan-v2&envId=top-interview-150
+28. Reverse the words in a string - https://leetcode.com/problems/reverse-words-in-a-string/description/?envType=study-plan-v2&envId=top-interview-150

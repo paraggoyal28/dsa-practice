@@ -33,3 +33,5 @@
 
 .cph
 *.class
+out/
+.idea/*
